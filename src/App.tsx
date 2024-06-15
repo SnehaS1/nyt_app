@@ -30,37 +30,22 @@ const App: React.FC = () => {
 
     fetchArticles();
   }, []);
-  console.log("sneha", process.env);
   return (
-    <div>
+    <div className="">
       <Header />
       <h1 className="text-green-500">Most Popular Articles</h1>
 
       {error && <p>{error}</p>}
 
-      <ul>
+      <ul className="p-20">
         {articles.map((article, index) => {
           if (index === 1) {
             console.log(article);
           }
           return (
-            <>
-              <NewsCard artcile={article} key={article.id} />
-              <li key={index}>
-                <h2>{article.title}</h2>
-                {/* <p>{article.abstract}</p> */}
-                {index === 1 && <NewsAvatar />}
-                <Button>
-                  <a
-                    href={article.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Read more
-                  </a>
-                </Button>
-              </li>{" "}
-            </>
+            <div className="border-2 border-red-200">
+              <p>{article.id}</p>
+            </div>
           );
         })}
       </ul>

@@ -9,6 +9,16 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontSize: {
+      base: [
+        "2.5rem",
+        {
+          lineHeight: "1.5rem",
+          letterSpacing: "0.2rem",
+          fontWeight: "500",
+        },
+      ],
+    },
     fontFamily: {
       sans: ["Inter", "sans-serif"],
       gwendolyn: ["Gwendolyn", "sans-serif"],
