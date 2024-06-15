@@ -10,7 +10,7 @@ module.exports = {
   prefix: "",
   theme: {
     fontSize: {
-      base: [
+      header_base: [
         "2.5rem",
         {
           lineHeight: "1.5rem",
@@ -27,7 +27,12 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        xs: "320px",
+        xm: "390px", // extra small screens, e.g., small mobile devices
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
       },
     },
     extend: {

@@ -14,7 +14,7 @@ export interface MediaType {
   "media-metadata": MediaMetadataType[];
 }
 
-export interface ArticleType {
+export interface ArticleType1 {
   uri: string;
   url: string;
   id: number;
@@ -37,4 +37,11 @@ export interface ArticleType {
   geo_facet: string[];
   media: MediaType[];
   eta_id: number;
+}
+
+export interface ArticleType {
+  id: string;
+  title: string;
+  abstract: string;
+  url: string;
 }

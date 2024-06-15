@@ -1,26 +1,19 @@
 import React, { useEffect, useState } from "react";
-import api from "./api/api";
-import { Button } from "./components/ui/button";
-import { NewsCard } from "./components/newsCards";
-import { NewsAvatar } from "./components/newsAvatar";
 import getPosts from "./api/posts";
 import { ArticleType } from "./types";
 import Header from "./components/Header";
-
-interface Article {
-  title: string;
-  abstract: string;
-  url: string;
-}
+import { NewsCard } from "./components/newsCards";
+import { Badge } from "./components/ui/badge";
 
 const App: React.FC = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [period, setPeriod] = useState(1); // default period to 1 day
 
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await getPosts();
+        const response = await getPosts(period);
         setError("");
         setArticles(response);
       } catch (error) {
@@ -29,26 +22,37 @@ const App: React.FC = () => {
     };
 
     fetchArticles();
-  }, []);
+  }, [period]);
   return (
     <div className="">
       <Header />
-      <h1 className="text-green-500">Most Popular Articles</h1>
+      <div className="mt-0.5 border-t-2 border-black"></div>
+      <div className=" text-green-500 flex justify-end mr-5 pt-5 gap-3">
+        {/* Most Popular Articles
+        <div className="flex gap-1">
+          <Badge>NEW</Badge>
+          <Badge>POPULAR</Badge>
+          <Badge>FEATURED</Badge>
+        </div> */}
+        <select
+          value={period}
+          onChange={(e) => setPeriod(Number(e.target.value))}
+          className="mb-4 p-2 border"
+        >
+          <option value={1}>1 Day</option>
+          <option value={7}>7 Days</option>
+          <option value={30}>30 Days</option>
+        </select>
+      </div>
 
       {error && <p>{error}</p>}
-
-      <ul className="p-20">
-        {articles.map((article, index) => {
-          if (index === 1) {
-            console.log(article);
-          }
-          return (
-            <div className="border-2 border-red-200">
-              <p>{article.id}</p>
-            </div>
-          );
-        })}
-      </ul>
+      <section className="flex justify-center py-3">
+        <ul className=" grid  justify-center md:grid-cols-3 lg:grid-cols-3   sm:grid-cols-2 mt-3 gap-x-2 gap-y-3">
+          {articles.map((article) => {
+            return <NewsCard article={article} key={article.id} />;
+          })}
+        </ul>
+      </section>
     </div>
   );
 };
