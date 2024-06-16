@@ -13,7 +13,7 @@ import { ArticleType } from "@/types";
 export function NewsCard({ article }: { article: ArticleType }) {
   return (
     <Card
-      className=" xs:w-[150px] sm:w-[200px] md:w-[300px] lg:w-[380px] "
+      className=" xs:w-[150px] sm:w-[200px]  lg:w-[330px] mx-2 md:[w-300]"
       data-testid="news-card"
     >
       {/* <Card className={cn("w-[300px]")}> */}
