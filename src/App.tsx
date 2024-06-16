@@ -3,7 +3,6 @@ import getPosts from "./api/posts";
 import { ArticleType } from "./types";
 import Header from "./components/Header";
 import { NewsCard } from "./components/newsCards";
-import { Badge } from "./components/ui/badge";
 
 const App: React.FC = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
@@ -27,13 +26,8 @@ const App: React.FC = () => {
     <div className="">
       <Header />
       <div className="mt-0.5 border-t-2 border-black"></div>
-      <div className=" text-green-500 flex justify-end mr-5 pt-5 gap-3">
-        {/* Most Popular Articles
-        <div className="flex gap-1">
-          <Badge>NEW</Badge>
-          <Badge>POPULAR</Badge>
-          <Badge>FEATURED</Badge>
-        </div> */}
+      <div className="flex justify-end mr-5 pt-5 gap-3">
+        <h4 className="text-2xl font-bold pt-2">Most Viewed Articles top</h4>
         <select
           value={period}
           onChange={(e) => setPeriod(Number(e.target.value))}
@@ -46,7 +40,7 @@ const App: React.FC = () => {
       </div>
 
       {error && <p>{error}</p>}
-      <section className="flex justify-center py-3">
+      <section className="flex justify-center py-3 ">
         <ul className=" grid  justify-center md:grid-cols-3 lg:grid-cols-3   sm:grid-cols-2 mt-3 gap-x-2 gap-y-3">
           {articles.map((article) => {
             return <NewsCard article={article} key={article.id} />;
