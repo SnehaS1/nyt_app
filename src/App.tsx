@@ -3,7 +3,15 @@ import getPosts from "./api/posts";
 import { ArticleType } from "./types";
 import Header from "./components/Header";
 import { NewsCard } from "./components/newsCards";
-
+import { Button } from "./components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./components/ui/card";
 const App: React.FC = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -43,7 +51,36 @@ const App: React.FC = () => {
       <section className="flex justify-center py-3 ">
         <ul className=" grid  justify-center md:grid-cols-3 lg:grid-cols-3   sm:grid-cols-2 mt-3 gap-x-2 gap-y-3">
           {articles.map((article) => {
-            return <NewsCard article={article} key={article.id} />;
+            // return <NewsCard article={article} key={article.id} />;
+            return (
+              <Card
+                key={article.id}
+                className=" xs:w-[150px] sm:w-[200px]  lg:w-[330px] mx-2 md:[w-300]"
+                data-testid="news-card"
+              >
+                {/* <Card className={cn("w-[300px]")}> */}
+                <CardHeader>
+                  <CardTitle>{article.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-4">
+                  <CardDescription className="pt-2">
+                    {article.abstract}
+                  </CardDescription>
+                </CardContent>
+                <CardFooter>
+                  <Button className="w-full">
+                    <a
+                      href={article.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      data-testid="read-article-link"
+                    >
+                      Read Article
+                    </a>
+                  </Button>
+                </CardFooter>
+              </Card>
+            );
           })}
         </ul>
       </section>
