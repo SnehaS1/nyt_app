@@ -1,3 +1,13 @@
+# Application Screenshot
+<img width="1509" alt="image" src="https://github.com/SnehaS1/nyt_app/assets/18303528/516a0b63-cabb-40e1-90fe-750b339d868d">
+
+### Mobile Screenshot
+<img width="636" alt="image" src="https://github.com/SnehaS1/nyt_app/assets/18303528/df6a5338-7c05-4561-b450-a0c0eb933a6d">
+
+## Change date range
+<img width="1512" alt="image" src="https://github.com/SnehaS1/nyt_app/assets/18303528/08d2d142-d304-4358-b261-bee93b0ad21a">
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -28,3 +38,15 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Run the application
+
+npm run dev
+
+## Test coverage
+
+npm run vcoverage
+
+
+
+
