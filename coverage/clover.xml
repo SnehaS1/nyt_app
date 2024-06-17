@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1718599519090" clover="3.2.0">
-  <project timestamp="1718599519090" name="All files">
-    <metrics statements="686" coveredstatements="277" conditionals="32" coveredconditionals="15" methods="20" coveredmethods="7" elements="738" coveredelements="299" complexity="0" loc="686" ncloc="686" packages="8" files="21" classes="21"/>
+<coverage generated="1718606736190" clover="3.2.0">
+  <project timestamp="1718606736190" name="All files">
+    <metrics statements="582" coveredstatements="289" conditionals="30" coveredconditionals="16" methods="17" coveredmethods="7" elements="629" coveredelements="312" complexity="0" loc="582" ncloc="582" packages="9" files="18" classes="18"/>
     <package name="nyt_app">
       <metrics statements="190" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="playwright.config.ts" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/playwright.config.ts">
@@ -318,7 +318,7 @@
       </file>
     </package>
     <package name="nyt_app.src.api">
-      <metrics statements="34" coveredstatements="21" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="34" coveredstatements="33" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="api.ts" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/api/api.ts">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -336,43 +336,32 @@
         <line num="13" count="1" type="stmt"/>
       </file>
       <file name="posts.ts" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/api/posts.ts">
-        <metrics statements="21" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="21" coveredstatements="20" conditionals="3" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="2" type="cond" truecount="0" falsecount="1"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="0" falsecount="1"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="40" type="stmt"/>
+        <line num="12" count="40" type="stmt"/>
+        <line num="13" count="40" type="stmt"/>
+        <line num="14" count="40" type="stmt"/>
+        <line num="15" count="40" type="stmt"/>
+        <line num="16" count="40" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
       </file>
     </package>
     <package name="nyt_app.src.components">
-      <metrics statements="67" coveredstatements="49" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
-      <file name="Header.cy.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/Header.cy.tsx">
-        <metrics statements="8" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-      </file>
+      <metrics statements="49" coveredstatements="49" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="Header.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/Header.tsx">
         <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="5" type="cond" truecount="1" falsecount="0"/>
@@ -384,19 +373,6 @@
         <line num="7" count="5" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
-      </file>
-      <file name="newsAvatar.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/newsAvatar.tsx">
-        <metrics statements="10" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
       </file>
       <file name="newsCards.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/newsCards.tsx">
         <metrics statements="40" coveredstatements="40" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
@@ -443,97 +419,7 @@
       </file>
     </package>
     <package name="nyt_app.src.components.ui">
-      <metrics statements="253" coveredstatements="142" conditionals="11" coveredconditionals="7" methods="3" coveredmethods="0"/>
-      <file name="avatar.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/ui/avatar.tsx">
-        <metrics statements="48" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-      </file>
-      <file name="badge.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/ui/badge.tsx">
-        <metrics statements="36" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-      </file>
+      <metrics statements="142" coveredstatements="142" conditionals="8" coveredconditionals="7" methods="0" coveredmethods="0"/>
       <file name="button.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/ui/button.tsx">
         <metrics statements="56" coveredstatements="56" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -682,36 +568,6 @@
         <line num="85" count="1" type="stmt"/>
         <line num="86" count="1" type="stmt"/>
       </file>
-      <file name="switch.tsx" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/components/ui/switch.tsx">
-        <metrics statements="27" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-      </file>
     </package>
     <package name="nyt_app.src.lib">
       <metrics statements="13" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
@@ -733,6 +589,40 @@
         <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="5" count="7" type="stmt"/>
         <line num="6" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="nyt_app.src.mocks">
+      <metrics statements="25" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="handlers.ts" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/mocks/handlers.ts">
+        <metrics statements="20" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+      <file name="server.ts" path="/Users/snehas/Desktop/Projects/untitled folder/nyt_app/src/mocks/server.ts">
+        <metrics statements="5" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
       </file>
     </package>
     <package name="nyt_app.src.tests">

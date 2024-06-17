@@ -46,12 +46,6 @@ describe("getPosts function", () => {
 
     const articles = await getPosts(1);
     // Expected result
-    const expectedArticles = responseData.results.map((article) => ({
-      id: article.id,
-      title: article.title,
-      abstract: article.abstract,
-      url: article.url,
-    }));
 
     expect(articles.length).toEqual(20);
   });

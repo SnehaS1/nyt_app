@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import getPosts from "./api/posts";
 import { ArticleType } from "./types";
 import Header from "./components/Header";
-import { NewsCard } from "./components/newsCards";
+// import { NewsCard } from "./components/newsCards";
 import { Button } from "./components/ui/button";
 import {
   Card,
@@ -15,7 +15,7 @@ import {
 const App: React.FC = () => {
   const [articles, setArticles] = useState<ArticleType[]>([]);
   const [error, setError] = useState<string | null>(null);
-  const [period, setPeriod] = useState(1); // default period to 1 day
+  const [period, setPeriod] = useState(1);
 
   useEffect(() => {
     const fetchArticles = async () => {
